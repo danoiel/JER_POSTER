@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f9f9f9;
+  color: #111;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a,
+nav button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav button:hover {
+  color: #000;
+}
+
+.section-bulle {
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.image-livre {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.image-livre img {
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.image-livre img:hover {
+  transform: scale(1.05);
+}
+
+.prix {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.commande-bulle {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 600px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.5s ease;
+}
+
+.commande-bulle.hidden {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, select, button {
+  padding: 0.75rem;
+  border-radius: 0.8rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background-color: #f0f0f0;
+  margin-top: 4rem;
+}
+.carousel {
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 12s linear infinite;
+  width: max-content;
+}
+
+.carousel-track img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 2rem;
+  border-radius: 1rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

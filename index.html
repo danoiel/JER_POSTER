@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posters Personnalisés</title>
+  <link rel="stylesheet" href="JER.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">PosterPro</h1>
+    <nav>
+      <ul>
+        <li><a href="#catalogue">Catalogue</a></li>
+        <li><a href="#personnalisation">Personnalisation</a></li>
+        <li><button id="openCommande">Commande</button></li>
+      </ul>
+    </nav>
+  </header>
+
+ <section id="catalogue" class="section-bulle">
+  <h2>Catalogue</h2>
+  <div class="carousel">
+  <div class="carousel-track">
+    <img src="PHOTO/IMG-20250803-WA0986.jpg" alt="Poster 1" />
+    <img src="PHOTO/IMG-20250803-WA0987.jpg" alt="Poster 2" />
+    <img src="PHOTO/IMG-20250803-WA0988.jpg" alt="Poster 3" />
+    <img src="PHOTO/IMG-20250803-WA0989.jpg" alt="Poster 1 clone" /> <!-- pour la boucle -->
+  </div>
+</div>>
+
+  <section id="personnalisation" class="section-bulle">
+    <h2>Personnalisation</h2>
+    <p>Ajoutez votre propre photo, choisissez la taille, et laissez-nous créer votre poster unique.</p>
+  </section>
+
+      <label>Image personnalisée :</label>
+      <input type="file" name="Image" accept="image/*" required>
+      <label>Preuve de paiement :</label>
+      <input type="file" name="Paiement" accept="image/*" required>
+      <p>Flooz / Mixx : <strong>91251206</strong></p>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PosterPro — Contact : danoagoroh@gmail.com</p>
+  </footer>
+
+  <script src="JER.js"></script>
+</body>
+</html>
